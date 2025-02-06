@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactPageComponent } from './contact-page.component';
+import ContactPageComponent from './contact-page.component';
 
 describe('PicingPageComponent', () => {
   let component: ContactPageComponent;
@@ -10,7 +10,7 @@ describe('PicingPageComponent', () => {
     await TestBed.configureTestingModule({
       imports: [ContactPageComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ContactPageComponent);
     component = fixture.componentInstance;
