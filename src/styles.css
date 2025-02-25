@@ -4,6 +4,19 @@
 @tailwind components;
 @tailwind utilities; */
 
+@theme {
+  --animate-fadeIn: fadeIn .2s ease-in-out;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
 html,
 body {
   @apply bg-slate-900 text-white;

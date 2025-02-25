@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { PokemonListComponent } from '../../pokemons/components/pokemon-list/pokemon-list.component';
 import { PokemonsService } from '../../pokemons/services/pokemons.service';
 import { SimplePokemon } from '../../pokemons/interfaces/simple-pokemon.interface';
-// import { PokemonListSkeletonComponent } from "./ui/pokemon-list-skeleton/pokemon-list-skeleton.component";
+import { PokemonListSkeletonComponent } from "./ui/pokemon-list-skeleton/pokemon-list-skeleton.component";
 
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map, tap } from 'rxjs';
@@ -14,7 +14,7 @@ import { Title } from '@angular/platform-browser';
   selector: 'pokemons-page',
   imports: [
     PokemonListComponent,
-    // PokemonListSkeletonComponent,
+    PokemonListSkeletonComponent,
   ],
   templateUrl: './pokemons-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

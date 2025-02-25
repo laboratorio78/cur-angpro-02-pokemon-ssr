@@ -3,11 +3,11 @@
 
 <hr class="my-2">
 
-<!-- @if (!isLoading()) { -->
-<pokemon-list [pokemons]="pokemons()" />
-<!-- } @else {
+@if (pokemons()) {
+  <pokemon-list [pokemons]="pokemons()" />
+} @else {
   <pokemon-list-skeleton />
-} -->
+}
 
 
 
