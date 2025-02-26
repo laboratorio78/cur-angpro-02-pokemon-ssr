@@ -49,7 +49,7 @@ export default class PokemonsPageComponent implements OnInit {
   ngOnInit(): void {
 
     // this.route.queryParamMap.subscribe(console.log);
-    console.log(this.currentPage());
+    // console.log(this.currentPage());
 
 
     this.loadPokemons();
